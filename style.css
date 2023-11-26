@@ -1,9 +1,55 @@
 /* style.css */
 
+:root, * {
+    padding: 0px;
+    margin: 0px;
+}
+
 /* img styles */
 
 img {
-    width: 30%
+    width: 100%;
+    
 }
 
 /* font styles */
+
+
+/* other styles */
+
+h1 {
+    color: white;
+    background-color: black;
+    opacity: 50%;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    right: 50%;
+}
+
+main {
+    display: flex;
+
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+}
+
+.brand-logo-pic {
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 100vh;
+}
+
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
