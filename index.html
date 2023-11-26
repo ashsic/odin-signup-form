@@ -22,43 +22,45 @@
             <form action="/sign-up/submit" method="post">
                 <div>
                     <h3>Sign up <em>now</em> to get started.</h3>
+                    <br>
+                    <h4>Required fields are indicated by <strong>*</strong></h4>
                 </div>
             
                 <div class="form-inputs">
                     <div>
                         <label for="first_Name">
-                            <span>First name: </span>
-                            <input type="text" name="first_Name" id="first_Name" />
+                            <span>First name<strong>*</strong>: </span>
+                            <input type="text" name="first_Name" id="first_Name" minlength="1" maxlength="20" required/>
                         </label>
                     </div>
                     <div>
                         <label for="last_Name">
-                            <span>Last name: </span>
-                            <input type="text" name="last_Name" id="last_Name" />
+                            <span>Last name<strong>*</strong>: </span>
+                            <input type="text" name="last_Name" id="last_Name" minlength="1" maxlength="20" required/>
                         </label>
                     </div>
                     <div>
                         <label for="email">
-                            <span>Email: </span>
-                            <input type="email" name="email" id="email" />
+                            <span>Email<strong>*</strong>: </span>
+                            <input type="email" name="email" id="email" required/>
                         </label>
                     </div>
                     <div>
                         <label for="phone_Number">
                             <span>Phone number: </span>
-                            <input type="text" name="phone_Number" id="phone_Number" />
+                            <input type="text" name="phone_Number" id="phone_Number"  />
                         </label>
                     </div>
                     <div>
                         <label for="password">
-                            <span>Password: </span>
-                            <input type="password" name="password" id="password" />
+                            <span>Password<strong>*</strong>: </span>
+                            <input type="password" name="password" id="password" minlength="8" maxlength="20" required/>
                         </label>
                     </div>
                     <div>
                         <label for="password_Confirm">
-                            <span>Confirm password: </span>
-                            <input type="password" name="password_Confirm" id="password_Confirm" />
+                            <span>Confirm password<strong>*</strong>: </span>
+                            <input type="password" name="password_Confirm" id="password_Confirm" minlength="8" maxlength="20" required/>
                         </label>
                     </div>
                 </div>

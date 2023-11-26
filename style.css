@@ -42,6 +42,11 @@ h2 {
     font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
+h4 > strong, span > strong{
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 main {
     display: flex;
 
@@ -70,6 +75,35 @@ label {
 aside {
     padding: 48px;
 }
+
+input {
+    height: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 2px 6px 0px 6px;
+    font-size: 16px;
+    margin: 2px;
+}
+
+input:focus {
+    margin: 0px;
+    border: 3px solid black;
+    
+}
+
+button {
+    width: 200px;
+    height: 60px;
+    border-radius: 24px;
+    background-color: rgb(255, 0, 200);
+    font-size: 20px;
+    padding-top: 4px;
+}
+
+/* :valid {
+    margin: 0px;
+    border: 3px solid rgb(140, 255, 140);
+    border-radius: 2px;
+} */
 
 .sign-up {
     display: flex;
