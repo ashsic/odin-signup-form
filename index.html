@@ -8,43 +8,45 @@
 </head>
 <body>
     <main>
-        <div class="sidebar">
+        <div class="brand-logo-pic">
             <h1>VEJTABLE</h1>
-            <img src="/photos/tolga-ahmetler-HqbptzjszGs-unsplash.jpg" alt="Assorted vegetables.">
+            <img src="tolga-ahmetler-HqbptzjszGs-unsplash.jpg" alt="Assorted vegetables.">
         </div>
 
-        <form action="/sign-up/submit" method="post">
-            <h2>Sign up <em>now</em> to get started.</h2>
+        <div class="sign-up">
+            <h2>Do you want fresh vegetables delivered to your door daily?</h2>
+            <form action="/sign-up/submit" method="post">
+                <h3>Sign up <em>now</em> to get started.</h2>
             
-            <label for="first_Name">
-                <span>First name: </span>
-                <input type="text" name="first_Name" id="first_Name" />
-            </label>
-
-            <label for="last_Name">
-                <span>Last name: </span>
-                <input type="text" name="last_Name" id="last_Name" />
-            </label>
-
-            <label for="email">
-                <span>Email: </span>
-                <input type="email" name="email" id="email" />
-            </label>
-
-
-            <label for="password">
-                <span>Password: </span>
-                <input type="password" name="password" id="password" />
-            </label>
-
-            <label for="password_Confirm">
-                <span>Confirm password: </span>
-                <input type="password" name="password_Confirm" id="password_Confirm" />
-            </label>
-
-        </form>
-
-
+                <label for="first_Name">
+                    <span>First name: </span>
+                    <input type="text" name="first_Name" id="first_Name" />
+                </label>
+                <label for="last_Name">
+                    <span>Last name: </span>
+                    <input type="text" name="last_Name" id="last_Name" />
+                </label>
+                <label for="email">
+                    <span>Email: </span>
+                    <input type="email" name="email" id="email" />
+                </label>
+                <label for="password">
+                    <span>Password: </span>
+                    <input type="password" name="password" id="password" />
+                </label>
+                <label for="password_Confirm">
+                    <span>Confirm password: </span>
+                    <input type="password" name="password_Confirm" id="password_Confirm" />
+                </label>
+                <button type="submit">Create Account</button>
+            </form>
+            <aside>
+                <p>
+                    Already have an account?
+                    <a href="">Log in!</a>
+                </p>
+            </aside>
+        </div>
 
     </main>
 </body>
