@@ -15,6 +15,15 @@ img {
 
 /* font styles */
 
+@font-face {
+    font-family: migae-sb;
+    src: url(./MigaeSemibold-3zd2M.otf);
+}
+
+* {
+    font-family: migae-sb;
+}
+
 
 /* other styles */
 
@@ -22,7 +31,7 @@ h1 {
     color: white;
     text-align: center;
     opacity: 100%;
-    font-size: 48px;
+    font-size: 84px;
 }
 
 h2 {
@@ -36,10 +45,13 @@ main {
 }
 
 form {
+    font-weight: 200;
     background-color: white;
     padding: 64px 128px 64px 48px;
     display: flex;
     flex-wrap: wrap;
+    box-shadow: 5px 5px 5px 0px rgb(165, 165, 165);
+
 }
 
 form > * {
@@ -61,7 +73,7 @@ aside {
     flex-direction: column;
     width: 60%;
     height: 100vh;
-    background-color: rgb(170, 136, 179);
+    background-color: rgb(231, 231, 231);
     justify-content: center;
 }
 
@@ -83,8 +95,11 @@ aside {
     background-color: rgba(0, 0, 0, 50%);
     position: absolute;
     top: 25%;
-    padding: 64px 0px;
+    padding: 36px 0px 20px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #heading {
@@ -94,6 +109,10 @@ aside {
 form {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.form-inputs {
     
 }
 
