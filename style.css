@@ -31,12 +31,15 @@ h1 {
     color: white;
     text-align: center;
     opacity: 100%;
-    font-size: 84px;
+    font-size: clamp(3rem, 5vw, 5rem);
+    
 }
 
 h2 {
     font-size: 28px;
-    padding: 64px 128px 64px 48px;
+    padding: 48px;
+    width: clamp(480px, 80%, 900px);
+    font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
 main {
@@ -47,7 +50,7 @@ main {
 form {
     font-weight: 200;
     background-color: white;
-    padding: 64px 128px 64px 48px;
+    padding: 48px;
     display: flex;
     flex-wrap: wrap;
     box-shadow: 5px 5px 5px 0px rgb(165, 165, 165);
@@ -55,7 +58,7 @@ form {
 }
 
 form > * {
-    padding: 24px;
+    padding: 20px;
 
 }
 
@@ -65,7 +68,7 @@ label {
 }
 
 aside {
-    padding: 64px 128px 64px 48px;
+    padding: 48px;
 }
 
 .sign-up {
@@ -95,7 +98,7 @@ aside {
     background-color: rgba(0, 0, 0, 50%);
     position: absolute;
     top: 25%;
-    padding: 36px 0px 20px;
+    padding: 36px 0px 28px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -113,15 +116,77 @@ form {
 }
 
 .form-inputs {
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: clamp(500px, 100%, 712px);
+    padding: 0px;
+}
+
+.form-inputs > * {
+    padding: 20px;
+    width: 280px;
 }
 
 
 /* Media Queries */
 
+@media screen and (max-width: 1226px) {
+    form {
+        align-items: center;
+    }
+    
+    .form-inputs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-inputs > * {
+        padding: 20px;
+        width: clamp(280px, 60%, 480px);
+    }
+
+    .sign-up {
+        justify-content: center;
+    }
+}
+
+
+
 @media screen and (max-width: 768px) {
     main {
         display: flex;
         flex-direction: column;
+    }
+    .brand-logo-pic {
+        width: 100%;
+        height: 30vh;
+        background-size: cover;
+    }
+
+    .sign-up {
+        height: 70%;
+        width: 100%;
+    }
+
+    form {
+        align-items: center;
+        width: 100%;
+        padding: 48px 0px;
+    }
+
+    .form-inputs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-inputs > * {
+        padding: 20px;
+        width: clamp(240px, 50%, 480px);
+    }
+
+    aside {
+        display: flex;
+        justify-content: center;
     }
 }
